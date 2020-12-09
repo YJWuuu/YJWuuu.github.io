@@ -6,45 +6,46 @@
 		<link rel="stylesheet" href="main.css">
 	</head>
 	<body>
+<a name="Home"></a>
 		<nav>
 			<div>
-				<div><a href="../index.html">Home</a></div>
-				<div><a>About me</a></div>
-				<div><a href="../special/index.html">Special</a></div>
-				<div><a href="../thematic/index.html">Theme</a></div>
-				<!--<div><a href="special/">Github Only</a></div>  若使用 Github -> 不需要打index.html (github會自動找index.html) -->
+				<a href="#Home"><div>Home</div></a>
+				<a href="#Introduction"><div>Introduction</div></a>
+				<a href="#Algorithm"><div>Algorithm</div></a>
+				<a href="#Application"><div>Application</div></a>
+				<a href="../index.html"><div>Contact Me</div></a>
 			</div>
 		</nav>
-		<nav>
-			<div>
-				<div><a href="#about">About..</a></div>
-				<div><a href="#intro">Introduction</a></div>
-				<div><a href="#algo">Approach</a></div>
-				<div><a href="#appli">Why GA?</a></div>
-			</div>
-		</nav>
+
+		<div id="home">
+			<a href="#Introduction"><div><h1>Introduction</h1></div></a>
+			<a href="#Algorithm"><div><h1>Genetic Algorithm</h1></div></a>
+			<a href="#Application"><div><h1>Application</h1></div></a>
+		</div>
+
 		<article>
 			<h1>Genetic Algorithm</h1>
-			<a name="about"></a>
-			<section>
-				<h2>Why this page?</h2>
-				During my junior year in college, I participated in an independent research project with my peers to pursue algorithms and control system in greater depth. We worked with Prof. WeiYu Chiu to develop a modular reconfigurable robot for locomotion control.Thus, I am going to introduce to you the Genetic Algorithm (GA) which I haved learned in the project.
-			</section>
-			<a name="intro"></a>
+
+			<a name="Introduction"></a>
 			<section>
 				<h2>Introduction</h2>
-				Genetic algorithm is an evolutionary algorithm, which is inspired by biological evolution mechanisms, such as crossover, reproduction, and mutation. Through a similar mechanism, genetic algorithm can find the optimal parameters for some complex problems.
-				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+				A genetic algorithm (GA) is an evolutionary algorithm, which is inspired by Charles Darwin’s theory of natural evolution. Genetic algorithms are commonly used to solve optimization problems and search problems with operators such as mutation, crossover and selection, which are inspired by biological evolution mechanisms. GA can generally be divided into six steps: initialization, selection, crossover, mutation, convergence, and termination. First, a number of genes are randomly initialized as the first generation. A gene is in fact a series of 0's and 1's. During each successive generation, a (high-quality) portion of the existing population is selected to breed a new generation with operators such as crossover and mutation. Convergence criteria are then checked whether they are met. The four steps in the middle cycle until the convergence criterion is met. Finally, the algorithm terminates, and the optimal solutions are found.
+				<br/><br/>
 			</section>
-			<a name="algo"></a>
+			<a name="Algorithm"></a>
 			<section>
 				<h2>Approach</h2>
 				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 			</section>
-			<a name="appli"></a>
+			<a name="Application"></a>
 			<section>
 				<h2>Why GA?</h2>
 				<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+			</section>
+			<a name="About"></a>
+			<section>
+				<h2>Why this page?</h2>
+				During my junior year in college, I participated in an independent research project with my peers to pursue algorithms and control system in greater depth. We worked with Prof. WeiYu Chiu to develop a modular reconfigurable robot for locomotion control.Thus, I am going to introduce to you the Genetic Algorithm (GA) which I haved learned in the project.
 			</section>
 		</article>
 	</body>
