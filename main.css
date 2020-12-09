@@ -1,7 +1,9 @@
+/* border: 3px solid black;*/
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -16,15 +18,18 @@ body {
 	font-weight: 400;
 	font-size: 2.4vh;
 	line-height: 3.6vh; /* 1.5 * font-size is nice. */
-	background-color: #6184ad;
+	
+	/* background-color: #6184ad; */
 }
 
 nav {
+	z-index: 10;
 	position: fixed;
-	/*text-align: center;*/
+	top: 0;
 	height: 6%;
 	width: 100%;
 	background-color: #707070;
+	opacity: 0.7;
 }
 
 nav > div {
@@ -33,27 +38,74 @@ nav > div {
 	margin-left: 50%;
 }
 
-nav > div > div {
+nav > div div {
 	display: inline-block; /* become a part of text */
-	height: 60%;
+	text-align: center;
+	line-height: 6vh;
 	width: 10vw;
-	margin-top: 1.5vh;
-	transition: background-position 0.5s ease-in-out;
-}
-
-nav > div > div:hover { /* mouse */
-	background-color: #415975; /*淺藍*/
-}
-
-nav > div > div > a {
 	/*font-weight: bold;*/
-	margin-left: 10%;
 	color: #ebebeb;
 	font-size: 2vh;
 	font-family: sans-serif;
+	text-decoration:none;
 }
 
-img {
+nav > div div:hover { /* mouse */
+	background-color: #415975; /*淺藍*/
+}
+
+/* div.home*/
+
+div#home {
+	background-color: #c5c2b2;
+}
+
+div#home > div {
+	position: relative;
+	display: block;
+	margin: auto;
+	height: 100vh; /* why not 100% */
+	width: 75%;
+	background-image: url('img/background.jpg');
+	background-size: cover;
+	opacity: 1;
+
+	color: white;
+	font-family: sans-serif;
+	font-size: 10vh;
+	line-height: 100vh;
+	text-align: center;
+
+}
+div#home > div > h1 {
+	position: relative;
+	top: 55vh;
+	left: 30%;
+	color: white;
+	font-family: sans-serif;
+	font-weight: bold;
+	font-size: 10vh;
+	line-height: 10vh;
+	opacity: 1;
+}
+
+div#home > div > h2 {
+	position: relative;
+	top: 57vh;
+	left: 30%;
+	color: white;
+	font-family: sans-serif;
+	font-style: italic;
+	font-size: 4vh;
+	line-height: 4vh;
+	opacity: 1;
+}
+
+div#cat {
+	background-color: white;
+}
+
+div#cat > img {
 	height: 30vh;
 	margin-top: 5vh;
 	margin-left: 15%;
@@ -66,27 +118,46 @@ article {
 	color: black;
 	padding: 0 10%;
 }
+article > section:first-child {
+	background-color: #eeeeee;
+	margin-left: 5%;
+	margin-right: 30%;
+	padding: 30px 30px;
+	border: 3px solid black;
+}
 
-h1 {
+article > section:first-child > h1 {
 	font-size: 4.8vh;
 	line-height: 7.2vh;
 	color: #ffa200;
 }
 
-h2 {
-	font-size: 3.6vh;
-	line-height: 5.4vh;
-	font-style: normal;
-	color: orange;
+article > div {
+	z-index: 10;
+	margin-top: -30vh;
+	margin-left: 70%;
+	height: 50vh;
+	width: 30vh;
 }
 
-h1, h2 {
-	font-family: sans-serif;
+div#cat2 > img {
+	height: 50vh;
+	width: 30vh;
 }
 
-section {
-	background-color: white;
-	margin: 0px 5%;
-	padding: 20px 20px;
+
+article > section:nth-of-type(2) {
+	margin-top: -10vh;
+	background-color: #eeeeee;
+	margin-left: 30%;
+	margin-right: 5%;
+	padding: 30px 30px;
+	border: 3px solid black;
+}
+
+article > section:nth-of-type(2) > h1 {
+	font-size: 4.8vh;
+	line-height: 7.2vh;
+	color: #ffa200;
 }
 
