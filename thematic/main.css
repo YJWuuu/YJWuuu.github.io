@@ -1,7 +1,9 @@
+/* border: 3px solid black;*/
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	scroll-behavior: smooth;
 }
 
 html {
@@ -18,78 +20,62 @@ body {
 	line-height: 3.6vh; /* 1.5 * font-size is nice. */
 }
 
-nav:first-child {
-	/*text-align: center;*/
-	height: 10vh;
+nav {
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	height: 6%;
 	width: 100%;
-	background-color: white;
-	border-bottom: 3px solid #999999;
+	background-color: #707070;
+	opacity: 0.7;
 }
 
-nav:first-child > div {
+nav > div {
 	height: 100%;
 	width: 100%;
 	margin-left: 50%;
 }
 
-nav:first-child > div > div {
-	display: inline-block;
-	height: 100%;
-	width: 10vw;
-	padding-top: 3vh;
-	/*border: 5px solid #999999;*/
-}
-
-nav:first-child > div > div:hover { /* mouse */
-	border-bottom: 5px solid #ade0ab;
-}
-
-nav:first-child > div > div > a {
+nav > div div {
+	display: inline-block; /* become a part of text */
+	text-align: center;
+	line-height: 6vh;
+	width: 8vw;
 	/*font-weight: bold;*/
-	margin-left: 10%;
-	color: #666666;
+	color: #ebebeb;
 	font-size: 2vh;
 	font-family: sans-serif;
+	text-decoration:none;
 }
 
-nav:first-child > div > div:hover > a { /* mouse */
-	color: #ade0ab;
+nav > div div:hover { /* mouse */
+	background-color: #415975; /*淺藍*/
 }
 
-nav:nth-of-type(2) {
-	position: fixed;
-	height: 100%;
-	width: 15%;
-	margin-left: 70%;
-	background-color: #f5f5f5;
+div#home {
+	background-color: #c5c2b2;
 }
 
-nav:nth-of-type(2) > div {
-	padding-top: 10vh;
-	height: 100%;
-	width: 100%;
-}
+div#home > a > div {
+	display: inline-block;
+	height: 100vh; /* why not 100% */
+	width: 33.1%;
+	background-image: url('img/background.jpg');
+	background-size: cover;
+	opacity: 1;
 
-nav:nth-of-type(2) > div > div {
-	height: 10%;
-	padding: 2vh 2vh 1vw 0;
-}
-
-nav:nth-of-type(2) > div > div:hover {
-	border-left: 5px solid #333333;
-	background-color: #eeeeee;	
-}
-
-nav:nth-of-type(2) > div > div > a {
-	/*font-weight: bold;*/
-	margin-left: 10%;
-	color: #888888;
-	font-size: 2.2vh;
+	color: white;
 	font-family: sans-serif;
+	font-size: 10vh;
+	text-align: center;
+	border: 3px solid black;
 }
 
-nav:nth-of-type(2) > div > div:hover > a { /* mouse */
-	color: #333333;
+div#home > a > div > h1 {
+	margin-top: 50vh;
+	font-size: 4.8vh;
+	line-height: 7.2vh;
+	color: white;
 }
 
 article {
