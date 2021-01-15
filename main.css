@@ -1,10 +1,9 @@
-/* border: 3px solid black;*/
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Serif&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth; /*for label*/
 }
 
 html {
@@ -23,7 +22,7 @@ body {
 }
 
 nav {
-	z-index: 10;
+	z-index: 1;
 	position: fixed;
 	top: 0;
 	height: 6%;
@@ -49,11 +48,9 @@ nav > div div {
 	text-decoration: none;
 }
 
-nav > div div:hover {
+nav > div div:hover { /*mouse hovering*/
 	background-color: #415975;
 }
-
-/* div.home*/
 
 div#home {
 	background-color: #c5c2b2;
@@ -74,8 +71,8 @@ div#home > div {
 	font-size: 10vh;
 	line-height: 100vh;
 	text-align: center;
-
 }
+
 div#home > div > h1 {
 	position: relative;
 	top: 55vh;
