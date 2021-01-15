@@ -1,4 +1,4 @@
-/* border: 3px solid black;*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Serif&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -14,12 +14,11 @@ html {
 }
 
 body {
-	font-family: serif;
+	font-family: 'PT Serif', serif;
 	font-weight: 400;
 	font-size: 2.4vh;
 	line-height: 3.6vh; /* 1.5 * font-size is nice. */
-	
-	/* background-color: #6184ad; */
+	background-color: #c8d0cc;
 }
 
 nav {
@@ -48,53 +47,36 @@ nav > div div {
 	text-decoration: none;
 }
 
-nav > div div:hover { /* mouse */
-	background-color: #415975; /*淺藍*/
+nav > div div:hover {
+	background-color: #415975;
 }
 
+body > div {
+	height: 60vh;
+	width: 100%;
+	background-image: url('img/Louvre.jpg');
+	background-size: cover;
+}
 
 article {
-	background-color: white;
-	/* background-color: #fffae3; */
-	/* background-color: #85A894; */
+	background-color: #c8d0cc;
 	color: black;
 	padding: 0 10%;
 }
-article > section:first-child {
-	background-color: #eeeeee;
-	margin-left: 5%;
-	margin-right: 30%;
-	padding: 30px 30px;
-	border: 3px solid black;
+
+article > section {
+	background-color: #eeeeee;;
+	margin: 10vh 5vw;
+	padding: 20px 5vw;
 }
 
-article > section:first-child > h1 {
-	font-size: 4.8vh;
-	line-height: 7.2vh;
-	color: #ffa200;
+article p {
+	margin-bottom: 5vh;
 }
 
-article > div {
-	z-index: 10;
-	margin-top: -30vh;
-	margin-left: 70%;
-	height: 50vh;
-	width: 30vh;
+h1 {
+	font-family: 'Amatic SC', cursive;
+	font-size: 7.2vh;
+	line-height: 10.8vh;
+	color: black;
 }
-
-
-article > section:nth-of-type(2) {
-	margin-top: -10vh;
-	background-color: #eeeeee;
-	margin-left: 30%;
-	margin-right: 5%;
-	padding: 30px 30px;
-	border: 3px solid black;
-}
-
-article > section:nth-of-type(2) > h1 {
-	font-size: 4.8vh;
-	line-height: 7.2vh;
-	color: #ffa200;
-}
-
