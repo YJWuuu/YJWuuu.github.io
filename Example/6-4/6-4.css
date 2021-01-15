@@ -1,0 +1,16 @@
+div {
+	height: 100px;
+	width: 100px;
+	background-color: red;
+	/*animation: bgChange 1s ease-in 5;*/
+	animation: bgChange 1s ease-in infinite alternate; /* alternate 到底之後倒帶 */
+}
+
+@keyframes bgChange {
+	from {
+		background-color: red;
+	}
+	to {
+		background-color: orange;
+	}
+}

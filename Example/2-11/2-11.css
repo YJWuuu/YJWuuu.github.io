@@ -1,0 +1,42 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* new 這樣container才會變100% (不用用100vh)*/
+html {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+/* new */
+
+body {
+	width: 100%;
+	height: 100%;
+	font: 2.4vh/3.6vh serif;
+}
+
+nav {
+	position: fixed;
+	top: 2vh;
+	right: 70%;
+	padding: 5px 10px;
+	background-color: purple;
+	color: white;
+	font-family: sans-serif;
+}
+/* 之前 container 100%不會滿版 是因為html沒有設定height 100% */
+div#container {
+	/* height: 100vh; */
+	height: 100%;
+	width: 70%;
+	margin-left: 30%;
+	background-color: grey;
+	padding: 5px 10px;
+}
+
+a {
+	color: white;
+}

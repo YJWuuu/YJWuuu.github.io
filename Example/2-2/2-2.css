@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&family=Crimson+Text&display=swap');
+
+h1 {
+	font-family: Commissioner, sans-serif; /* 第二順位 */
+}
+p {
+	font-family: Crimson Text, serif;
+}

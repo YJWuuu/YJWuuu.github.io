@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	font-family: sans-serif;
+	font-size: 2.4vh;
+	font-weight: bold;
+}
+
+article {
+	height: 100%; /* 訂正 */
+	display: flex;
+	margin: 10vh 2vw;
+	flex-direction: column;
+	flex-wrap: wrap; /* 寬度不夠會換行 */
+	justify-content: space-around; /* 一行為直的 因為 coloum */
+	align-content: space-around;
+}
+
+article > section {
+	width: 40%;
+	height: 20%;
+	padding: 5px;
+	margin: 1px;
+	background-color: #386641;
+	border: solid 1px blue;
+	font-size: 3vh;
+}
+
+article > section > img {
+	border-bottom: 2px solid; /* 訂正 */
+	max-width: 100px; /* 訂正 */
+}
+
+@media only screen and (min-width: 1200px) {
+	body {
+		font-size: 1.6vh;
+	}
+
+	article {
+		padding: 5% 10%; /* 訂正 */
+		flex-direction: row;
+		flex-wrap: wrap; /* 寬度不夠會換行 */
+	}
+
+	article > section {
+		width: 20%;
+		height: 40%;
+	}
+	article > section > img {
+		max-width: 200px; /* 訂正 */
+	}
+}

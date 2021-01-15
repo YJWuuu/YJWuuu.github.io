@@ -1,0 +1,13 @@
+/* This is my first CSS file */
+/*
+selector {
+	property: value;
+}
+*/
+body {
+	background-color: pink;
+}
+
+div { /* All DIVs */
+	background-color: orange;
+}

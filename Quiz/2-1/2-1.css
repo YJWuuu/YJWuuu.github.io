@@ -1,0 +1,15 @@
+/* This is my first CSS file */
+/*
+selector {
+	property: value;
+}
+*/
+body {
+	background-color: pink;
+}
+article {
+	background-color: green;
+}
+section {
+	background-color: orange;
+}
