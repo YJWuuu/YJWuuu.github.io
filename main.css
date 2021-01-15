@@ -1,4 +1,5 @@
 /* border: 3px solid black;*/
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=PT+Serif&display=swap');
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -14,12 +15,11 @@ html {
 }
 
 body {
-	font-family: serif;
+	font-family: 'PT Serif', serif;
 	font-weight: 400;
 	font-size: 2.4vh;
 	line-height: 3.6vh; /* 1.5 * font-size is nice. */
-	
-	/* background-color: #6184ad; */
+	background-color: #eeeeee;
 }
 
 nav {
@@ -43,15 +43,14 @@ nav > div div {
 	text-align: center;
 	line-height: 6vh;
 	width: 10vw;
-	/*font-weight: bold;*/
 	color: #ebebeb;
 	font-size: 2vh;
 	font-family: sans-serif;
 	text-decoration: none;
 }
 
-nav > div div:hover { /* mouse */
-	background-color: #415975; /*淺藍*/
+nav > div div:hover {
+	background-color: #415975;
 }
 
 /* div.home*/
@@ -64,7 +63,7 @@ div#home > div {
 	position: relative;
 	display: block;
 	margin: auto;
-	height: 100vh; /* why not 100% */
+	height: 100vh;
 	width: 75%;
 	background-image: url('./img/background.jpg');
 	background-size: cover;
@@ -102,7 +101,7 @@ div#home > div > h2 {
 }
 
 div#cat {
-	background-color: white;
+	background-color: #eeeeee;
 }
 
 div#cat > img {
@@ -112,28 +111,25 @@ div#cat > img {
 }
 
 article {
-	background-color: white;
-	/* background-color: #fffae3; */
-	/* background-color: #85A894; */
+	background-color: #eeeeee;
 	color: black;
 	padding: 0 10%;
 }
 article > section:first-child {
-	background-color: #eeeeee;
+	background-color: #c8d0cc;
 	margin-left: 5%;
 	margin-right: 30%;
 	padding: 30px 30px;
-	border: 3px solid black;
 }
 
 article > section:first-child > h1 {
-	font-size: 4.8vh;
-	line-height: 7.2vh;
-	color: #ffa200;
+	font-family: 'Amatic SC', cursive;
+	font-size: 7.2vh;
+	line-height: 10.8vh;
+	color: black;
 }
 
 article > div {
-	z-index: 10;
 	margin-top: -30vh;
 	margin-left: 70%;
 	height: 50vh;
@@ -148,16 +144,15 @@ div#cat2 > img {
 
 article > section:nth-of-type(2) {
 	margin-top: -10vh;
-	background-color: #eeeeee;
-	margin-left: 30%;
+	margin-left: 5%;
 	margin-right: 5%;
 	padding: 30px 30px;
-	border: 3px solid black;
+	background-color: #c8d0cc;
 }
 
 article > section:nth-of-type(2) > h1 {
 	font-size: 4.8vh;
 	line-height: 7.2vh;
-	color: #ffa200;
+	color: black;
 }
 
